@@ -1,0 +1,66 @@
+body {
+    background-color: RGB(247, 236, 222);
+}
+
+
+.main h1::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 18%;
+    left: 39.5%;
+    bottom: 42px;
+    border-radius: 5px;
+    background-color: #fec260;
+    transition: height .5s;
+    z-index: -2;
+}
+
+h1:hover::before {
+    height: 35%;
+}
+
+.main h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+
+.btn {
+    padding: 5px 50px;
+    background-color: #d1512d;;
+    color: #fff;
+    font-size: 20px;
+    transition: all .05s;
+
+}
+.btn:hover{
+    background-color:  #bb4120;
+    border-color:  #a03315;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.btn-visit{
+    background-color: #9eb23b;
+    color: #fff;
+    padding: 5px 10px;
+}
+.btn-visit:hover{
+    background-color: #8a9e23;
+    border-color:  #6e8018;
+}
+.btn-delete{
+    background-color: #d30820;
+    color: #fff;
+    padding: 5px 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="position-relative main">
+                <h1 class="text-center py-3 pt-4 ">Bookmarker</h1>
+                <hr>
+            </div>
+
+            <div>
+                <h2 class="text-center py-3 mx-auto">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center" >
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name</label>
+                    <input  oninput="nameValidation()" type="text" placeholder="Bookmark Name" class="form-control" id="siteName" >
+                </div>
+                <div class="site-url w-100 d-flex flex-column justify-content-center pt-5">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input  oninput="urlValidation()" type="url" placeholder="Website URL" class="form-control" id="siteUrl">
+                </div>
+
+                <div class="w-75 mx-auto text-center">
+                    <button class="btn btn-submit my-4 text-center rounded-2 " id="submitBtn"
+                        onclick="addBook()">Submit</button>
+                </div>
+                <hr>
+            </div>
+            <table class="table mt-4 table-striped text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
